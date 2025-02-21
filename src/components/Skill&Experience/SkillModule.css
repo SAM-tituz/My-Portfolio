@@ -1,0 +1,188 @@
+.spacer {
+  aspect-ratio: 960/100;
+  width: 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+}
+.layer {
+  background: url("../../assets/layered3.svg");
+}
+.layer1 {
+  background: url("../../assets/layered4.svg");
+}
+/* -----skills-----------  */
+.background {
+  background: linear-gradient(-45deg, #c6236779, #24243ec7, #0f0f1f, #1d1d3b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.skills {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+}
+.skills h1 {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600 !important;
+  margin-top: 20px;
+  color: rgb(242, 243, 244);
+}
+.skills p {
+  font-size: 18px;
+  text-align: center;
+
+  color: rgb(177, 178, 179);
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.skill-card {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(100, 100, 255, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(100, 100, 255, 0.3);
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  color: rgba(242, 243, 244, 0.5);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-item {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(242, 243, 244, 0.5);
+  border: 1px solid rgba(242, 243, 244, 0.5);
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 8px;
+}
+/* --------experience----------- */
+.experience {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.experience h1 {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600 !important;
+  margin-top: 20px;
+  color: rgb(242, 243, 244);
+}
+.experience p {
+  font-size: 18px;
+  text-align: center;
+
+  color: rgb(177, 178, 179);
+}
+
+.experience-card {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px solid rgba(100, 100, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(100, 100, 255, 0.2);
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 120px; /* Initial height */
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Initial text visibility - only show 4 lines and end with "..." */
+.experience-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Show only 4 lines */
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.8;
+  transform: translateY(5px);
+
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  position: relative;
+}
+
+/* Expansion effect on hover */
+.experience-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(100, 100, 255, 0.5);
+  border: 2px solid rgba(100, 100, 255, 0.7);
+  max-height: 500px; /* Expand smoothly */
+}
+
+/* Reveal full text on hover */
+.experience-card:hover p {
+  -webkit-line-clamp: unset; /* Remove line limit */
+  line-clamp: unset;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animated Border Outline */
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 15px;
+  border: 2px solid rgba(100, 100, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.experience-card:hover::before {
+  opacity: 1;
+}

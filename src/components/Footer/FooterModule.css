@@ -1,0 +1,56 @@
+/* Footer.css */
+footer {
+    background-color: #191924;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content:center;
+  }
+  
+  footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1em;
+  }
+
+footer .social-icons .icon:hover {
+    color:#C62368; /* Replace with the background color */
+    background-color:transparent; /* Change icon background color */
+}
+  
+.tooltip-inner {
+    background: #5a5a5b;
+  }
+.titlecard a:hover{
+    color: #C62368;
+}

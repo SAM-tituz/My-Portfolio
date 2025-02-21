@@ -1,0 +1,284 @@
+/*=============== BASE ===============*/
+
+.container__projects img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.container__projects {
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+}
+/* .background__project {
+  background: linear-gradient(-10deg, #8a23c64d, #29294bb7, #191924, #191924);
+} */
+
+.card__container {
+  display: grid;
+  row-gap: 3.5rem;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 328px;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  width: 280px;
+
+  background-color: #1a2030;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px #c623677e;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  font-size: 0.813rem;
+  margin-bottom: 0.25rem;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: #00bcf5;
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container__projects {
+    margin-inline: 1rem;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+  .project__title h3 {
+    margin-bottom: 30px;
+    
+  }
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container__projects {
+    height: auto;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__img {
+    width: 348px;
+  }
+  .card__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}
+.project__title {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+.project__title h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.project__title h3 {
+  margin-bottom: 30px;
+  color: rgba(242, 243, 244, 0.5);
+  font-size: 20px;
+}
+/* --------------popup ----------------------*/
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+.modal__card {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(0.8);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Style for the title */
+.modal__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Style for description text */
+.modal__info {
+  font-size: 1rem;
+  color: rgba(242, 243, 244, 0.8);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Buttons inside modal */
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal__button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.modal__button:hover {
+  background-color: #836fff;
+}
+body.modal-open {
+  overflow: hidden;
+}
+/* Active modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.active-modal .modal__card {
+  transform: scale(1);
+}

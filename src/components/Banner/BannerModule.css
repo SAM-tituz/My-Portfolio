@@ -1,0 +1,118 @@
+.img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the frame */
+  border: 2px solid;
+  border-color: violet;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  transition: all 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Apply different size for mobile screens with transition */
+@media (max-width: 1198px) {
+  .banner .row {
+    display: flex;
+    flex-direction: column; /* Text below, Image on top */
+  }
+
+  .img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+  .banner h1 {
+    text-align: center !important;
+    font-size: 40px !important;
+  }
+
+  .banner h2 {
+    text-align: center;
+  }
+  .banner p {
+    text-align: center !important;
+    font-size: 19px !important;
+  }
+  .banner button {
+    align-items: center !important;
+  }
+}
+/* Default: Left-align on large screens (≥990px) */
+.tagline-wrapper {
+  display: flex;
+  justify-content: flex-start; /* Aligns left */
+}
+
+/* Center the whole div on smaller screens (≤990px) */
+@media (max-width: 1190px) {
+  .tagline-wrapper {
+    justify-content: center; /* Centers the div */
+  }
+}
+
+.banner {
+  margin-top: 0;
+  padding: 100px 0 50px 0;
+}
+.tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  /* background: linear-gradient(90.21deg,#0da02daf -5.91%,#b9b602d2 111.58%); */
+  background: linear-gradient(
+    90.21deg,
+    #c62368 -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+}
+.banner p {
+  color: #b8b8b8;
+  font-size: 19.5px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+  text-align: left;
+}
+.banner button {
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner button:hover {
+  color: #ffff;
+  /* background: linear-gradient(90.21deg, #00420080 -5.91%, #00f53580 111.58%); */
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+}
+
+.bg {
+  background: url("../../assets/animation.svg") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}

@@ -1,0 +1,116 @@
+.education {
+  text-align: center;
+  margin-top: 60px;
+  padding: 60px 0;
+  color: white;
+}
+
+.education-container {
+  display: flex;
+ 
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  
+}
+.education h1 {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600 !important;
+  margin-top: 20px;
+  color: rgb(242, 243, 244);
+}
+.education h6{
+    font-weight:normal;
+    color: rgb(177, 178, 179);
+}
+.education h5{
+    font-weight: 400;
+
+}
+.education p {
+  font-size: 18px;
+  
+  text-align: center;
+  color: rgb(177, 178, 179);
+}
+
+.education-card {
+  width: 90%;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px solid rgba(100, 100, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(100, 100, 255, 0.2);
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 200px; /* Initial height */
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Initial text visibility - only show 4 lines and end with "..." */
+.education-card {
+    position: relative;
+    max-height: 250px; /* Adjust initial height */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+    transform-origin: bottom; /* Expands only at the bottom */
+  }
+  
+  /* Style for text truncation */
+  .education-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Show only 2 lines */
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.8;
+    
+    transform: translateY(5px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  }
+  
+  /* Expansion effect on hover */
+  .education-card:hover {
+    max-height: 500px; /* Expand smoothly */
+    transform: scale(1.02); /* Subtle scale effect */
+    box-shadow: 0 10px 25px rgba(100, 100, 255, 0.5);
+    border: 2px solid rgba(100, 100, 255, 0.7);
+  }
+  
+  /* Reveal full text smoothly */
+  .education-card:hover p {
+    -webkit-line-clamp: unset; /* Remove truncation */
+    opacity: 1;
+    line-clamp: unset;
+    transform: translateY(0);
+  }
+  
+  /* Ensure animation is smooth when mouse leaves */
+  .education-card:not(:hover) {
+    transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out;
+  }
+/* Animated Border Outline */
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 15px;
+  border: 2px solid rgba(100, 100, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.education-card:hover::before {
+  opacity: 1;
+}

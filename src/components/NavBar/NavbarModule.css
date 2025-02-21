@@ -1,0 +1,64 @@
+nav.navbar.scrolled {
+  padding: 3px 0;
+
+  background-color: #191924;
+}
+nav.navbar a.navbar-brand {
+  width: 9%;
+}
+.navbar-brand {
+  color: white !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 17px;
+}
+.navbar-collapse {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c62368 !important;
+}
+
+.navbar-toggler {
+  border-color: white !important; /* White border */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  block-size: 27px;
+}
+.navbtn {
+  margin-left: 50px;
+  border-radius: 4% 40%;
+  border-color: #c62368;
+  color: aliceblue;
+}
+.navbtn:hover {
+  color: aliceblue;
+  background-color: #c62368;
+  border-color: #c62368;
+}
+.navbtnmenu {
+  background-color: #1f1f35;
+  border-radius: 10%;
+  margin-top: 5px !important;
+  margin-left: 20px !important;
+}
+.navbtnmenu .dropdown-item {
+  color: #fff;
+}
+.navbtnmenu .dropdown-item:hover {
+  background-color: #c62367ce;
+  color: #fff;
+}
+@media screen and (max-width: 760px) {
+  .navbtn {
+    margin-left: 1px;
+    
+  }
+}
