@@ -15,6 +15,21 @@ import postman from "../../assets/icons8-postman-24.png";
 import vite from "../../assets/icons8-vite-24.png";
 import vs from "../../assets/icons8-vs-code-24.png";
 
+// --------------------------------------------
+const experience = [
+  {
+    title: "Frontend Developer",
+    company: "Company:Skillrank",
+    content:
+      "During my three-month internship at SkillRank as a Frontend Developer, I worked extensively with Angular to build dynamic and user-friendly web applications. I collaborated with the team to develop responsive UI components, integrate APIs using Postman, and manage databases with MongoDB. This experience enhanced my skills in frontend development, debugging, and optimizing performance. I also gained valuable insights into agile workflows, team collaboration, and real-world project development, further strengthening my ability to create efficient and scalable web applications.",
+  },
+  {
+    title: "Reason to hire me",
+    company: "What Sets Me Apart.",
+    content:
+      "Aspiring React Frontend Developer passionate about crafting exceptional user experiences. I bring fresh perspectives, boundless ambition, and unconventional thinking to every project. My goal is to create digital magic through energetic, innovative work.  Let’s connect and collaborate to create engaging, efficient, and cutting-edge web solutions that push boundaries and inspire users.",
+  },
+];
 const ExperienceCard = ({ title, company, content }) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -24,13 +39,13 @@ const ExperienceCard = ({ title, company, content }) => {
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
       style={{
-        maxHeight: expanded ? "500px" : "145px", // Adjust height for expansion
+        maxHeight: expanded ? "500px" : "180px", // Adjust height for expansion
         transition: "max-height 0.5s ease-in-out",
       }}
     >
-      <h5 className="card-title text-primary">{title}</h5>
-      <h6 className="card-subtitle mb-2 text-muted">{company}</h6>
-      <p className="card-text">{content}</p>
+      <h5 className="card-title ">{title}</h5>
+      <h6 className="card-subtitle mb-2 text-start">{company}</h6>
+      <p className="card-text text-start">{content}</p>
     </div>
   );
 };
@@ -116,24 +131,17 @@ function Skill() {
             Launching My Career: A Fresh Perspective on Front-End Engineering
           </p>
           <div className="experience-container">
-            <ExperienceCard
-              title="HTML Developer"
-              company="Sprite Software"
-              content="As a Junior UI Developer at Sprite Software, I specialized in crafting responsive user-friendly interfaces using HTML, CSS, and Tailwind CSS. Collaborating closely with design and development teams, I enhanced web performance and streamlined development processes with reusable components."
-            />
-            <ExperienceCard
-              title="HTML Developer"
-              company="Sprite Software"
-              content="As a Junior UI Developer at Sprite Software, I specialized in crafting responsive user-friendly interfaces using HTML, CSS, and Tailwind CSS. Collaborating closely with design and development teams, I enhanced web performance and streamlined development processes with reusable components."
-            />
-            <ExperienceCard
-              title="Reason to Hire Me"
-              company="What Sets Me Apart."
-              content="Aspiring React Frontend Developer passionate about crafting exceptional user experiences. I bring fresh perspectives, boundless ambition, and unconventional thinking to every project."
-            />
+            {experience.map((val, index) => (
+              <ExperienceCard
+                key={index}
+                title={val.title}
+                company={val.company}
+                content={val.content}
+              />
+            ))}
           </div>
         </section>
-          <div className="spacer layer1" />
+        <div className="spacer layer1" />
       </div>
     </>
   );

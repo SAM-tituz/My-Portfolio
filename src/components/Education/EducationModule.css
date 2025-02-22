@@ -7,11 +7,10 @@
 
 .education-container {
   display: flex;
- 
+
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  
 }
 .education h1 {
   font-size: 42px;
@@ -20,17 +19,15 @@
   margin-top: 20px;
   color: rgb(242, 243, 244);
 }
-.education h6{
-    font-weight:normal;
-    color: rgb(177, 178, 179);
+.education h6 {
+  font-weight: normal;
+  color: rgb(177, 178, 179);
 }
-.education h5{
-    font-weight: 400;
-
+.education h5 {
+  font-weight: 400;
 }
 .education p {
   font-size: 18px;
-  
   text-align: center;
   color: rgb(177, 178, 179);
 }
@@ -56,47 +53,48 @@
 
 /* Initial text visibility - only show 4 lines and end with "..." */
 .education-card {
-    position: relative;
-    max-height: 250px; /* Adjust initial height */
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
-    transform-origin: bottom; /* Expands only at the bottom */
-  }
-  
-  /* Style for text truncation */
-  .education-card p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* Show only 2 lines */
-    -webkit-box-orient: vertical;
-    line-clamp: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    opacity: 0.8;
-    
-    transform: translateY(5px);
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-  }
-  
-  /* Expansion effect on hover */
-  .education-card:hover {
-    max-height: 500px; /* Expand smoothly */
-    transform: scale(1.02); /* Subtle scale effect */
-    box-shadow: 0 10px 25px rgba(100, 100, 255, 0.5);
-    border: 2px solid rgba(100, 100, 255, 0.7);
-  }
-  
-  /* Reveal full text smoothly */
-  .education-card:hover p {
-    -webkit-line-clamp: unset; /* Remove truncation */
-    opacity: 1;
-    line-clamp: unset;
-    transform: translateY(0);
-  }
-  
-  /* Ensure animation is smooth when mouse leaves */
-  .education-card:not(:hover) {
-    transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out;
-  }
+  position: relative;
+  max-height: 250px; /* Adjust initial height */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.4s ease-in-out;
+  transform-origin: bottom; /* Expands only at the bottom */
+}
+
+/* Style for text truncation */
+.education-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.8;
+
+  transform: translateY(5px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Expansion effect on hover */
+.education-card:hover {
+  max-height: 500px; /* Expand smoothly */
+  transform: scale(1.02); /* Subtle scale effect */
+  box-shadow: 0 10px 25px rgba(100, 100, 255, 0.5);
+  border: 2px solid rgba(100, 100, 255, 0.7);
+}
+
+/* Reveal full text smoothly */
+.education-card:hover p {
+  -webkit-line-clamp: unset; /* Remove truncation */
+  opacity: 1;
+  line-clamp: unset;
+  transform: translateY(0);
+}
+
+/* Ensure animation is smooth when mouse leaves */
+.education-card:not(:hover) {
+  transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
 /* Animated Border Outline */
 .education-card::before {
   content: "";

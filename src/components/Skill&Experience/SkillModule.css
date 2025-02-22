@@ -140,10 +140,7 @@
 
 /* Initial text visibility - only show 4 lines and end with "..." */
 .experience-card p {
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* Show only 4 lines */
-  -webkit-box-orient: vertical;
-  line-clamp: 4;
+ 
   overflow: hidden;
   text-overflow: ellipsis;
   opacity: 0.8;
@@ -185,4 +182,23 @@
 
 .experience-card:hover::before {
   opacity: 1;
+}
+.experience h1 {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600 !important;
+  margin-top: 20px;
+  color: rgb(242, 243, 244);
+}
+.experience h6 {
+  font-weight: normal;
+  color: rgb(177, 178, 179);
+}
+.experience h5 {
+  font-weight: 400;
+}
+.experience p {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(177, 178, 179);
 }
