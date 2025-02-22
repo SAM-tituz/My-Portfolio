@@ -6,9 +6,9 @@ import HeaderImage from "../../assets/Headder.jpg";
 function Banner() {
   return (
     <section className="banner " id="home">
-      <Container >
+      <Container>
         <Row className="align-items-center bg">
-          {/* Image First on Mobile, Last on Laptop */}
+          {/* Image First on Mobile, side on Laptop */}
           <Col
             xs={12}
             md={{ span: 6, order: 1 }}
@@ -20,8 +20,8 @@ function Banner() {
                 src={HeaderImage}
                 alt="Header img"
                 className="img-fluid rounded-circle img"
-                />
-                </div>
+              />
+            </div>
           </Col>
 
           {/* Text First on Laptop, Last on Mobile */}
@@ -35,23 +35,23 @@ function Banner() {
               <span className=" tagline">Welcome to my Portfolio</span>
             </div>
             <h1>
-              {`Hi, I am `}
-              <br />
-              {"Sam Sundar "}
+              Hi, I am <br />
+              <span className="name-highlight">Sam Sundar S T</span>
             </h1>
 
             <h2 className="wrap">I'm a Web Developer</h2>
-            <p> 
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-              aliquid nulla ipsa consequatur? Id in ipsum quasi! Tempore, error
-              minus? Aut magnam harum reiciendis cumque maxime fugit possimus
-              cum blanditiis.
+            <p>
+              Aspiring web developer with a strong foundation in front-end
+              development. I'm eager to collaborate, learn, and grow in a
+              professional environment. Passionate about technology and web
+              development, and committed to delivering high-quality,
+              <br /> user-friendly experiences.
             </p>
             <button
-              className="btn btn-outline-primary"
+              className="btn btn-outline-primary resume-btn"
               onClick={() => console.log("clicked")}
             >
-              Resume
+              Check Resume
               <ArrowRightCircle size={20} className="ms-1" />
             </button>
           </Col>

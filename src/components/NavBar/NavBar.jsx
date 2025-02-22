@@ -47,9 +47,18 @@ function NavBar() {
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="navbtnmenu">
-              <Dropdown.Item href="https://www.linkedin.com/in/sam-sundar-st/" target="blank">Linkedin</Dropdown.Item>
-              <Dropdown.Item href="https://github.com/SAM-tituz"target="blank">Github</Dropdown.Item>
-              <Dropdown.Item href="https://x.com/SamSundar26"target="blank">X(twiter)</Dropdown.Item>
+              <Dropdown.Item
+                href="https://www.linkedin.com/in/sam-sundar-st/"
+                target="blank"
+              >
+                Linkedin
+              </Dropdown.Item>
+              <Dropdown.Item href="https://github.com/SAM-tituz" target="blank">
+                Github
+              </Dropdown.Item>
+              <Dropdown.Item href="https://x.com/SamSundar26" target="blank">
+                X(twitter)
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </Navbar.Collapse>
