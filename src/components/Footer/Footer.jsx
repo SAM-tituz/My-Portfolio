@@ -3,13 +3,12 @@ import React from "react";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import "./FooterModule.css";
 import {
-  FaPhone,
   FaEnvelope,
   FaLinkedin,
   FaInstagram,
-  FaWhatsapp,
   FaGithub,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   const renderTooltip = (props, text) => (
@@ -19,7 +18,7 @@ function Footer() {
   );
   return (
     <footer>
-      <h2 className="mb-3">SAM SUNDAR S T</h2>
+      <h2 className="mb-3">SAM SUNDAR S T </h2>
       <nav>
         <ul className="titlecard">
           <li>
@@ -45,7 +44,7 @@ function Footer() {
           placement="bottom"
           overlay={(props) => renderTooltip(props, "Email Me")}
         >
-          <a className="icon" href="mailto:example@example.com">
+          <a className="icon" target="_blank" href="mailto:samsundar262001@gmail.com">
             <FaEnvelope />
           </a>
         </OverlayTrigger>
@@ -53,7 +52,7 @@ function Footer() {
           placement="bottom"
           overlay={(props) => renderTooltip(props, "LinkedIn")}
         >
-          <a className="icon" href="https://www.linkedin.com/in/navaneethankv/">
+          <a className="icon" target="_blank" href="https://www.linkedin.com/in/sam-sundar-st/">
             <FaLinkedin />
           </a>
         </OverlayTrigger>
@@ -61,23 +60,23 @@ function Footer() {
           placement="bottom"
           overlay={(props) => renderTooltip(props, "Instagram")}
         >
-          <a className="icon" href="https://www.instagram.com/navaneethankv/">
+          <a className="icon" target="_blank" href="https://www.instagram.com/samsundar._/">
             <FaInstagram />
           </a>
         </OverlayTrigger>
         <OverlayTrigger
           placement="bottom"
-          overlay={(props) => renderTooltip(props, "WhatsApp")}
+          overlay={(props) => renderTooltip(props, "Twitter")}
         >
-          <a className="icon" href="https://wa.me/1234567890">
-            <FaWhatsapp />
+          <a className="icon" target="_blank" href="https://x.com/SamSundar26">
+            <FaXTwitter/>
           </a>
         </OverlayTrigger>
         <OverlayTrigger
           placement="bottom"
           overlay={(props) => renderTooltip(props, "GitHub")}
         >
-          <a className="icon" href="https://github.com/navaneethankv">
+          <a className="icon" target="_blank" href="https://github.com/SAM-tituz">
             <FaGithub />
           </a>
         </OverlayTrigger>
