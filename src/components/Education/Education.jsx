@@ -4,23 +4,28 @@ import "./EducationModule.css";
 
 const educations = [
   {
-    schoolname: "Francis xavier engineering college",
-    studyinfo: "bachelor of engineering",
+    schoolname: "Francis Xavier Engineering College",
+    studyinfo:
+      "Bachelor of Engineering - BE,Electronics and Communication Engineering",
     year: "2019-2023",
-    grade: "85%",
-    content: `With a comprehensive front-end development course under my belt, I've cultivated expertise in HTML, CSS, and JavaScript. This educational journey has empowered me to craft visually captivating, responsive websites and dynamic web applications. Complementing this, I've refined my abilities through hands-on projects using React.js, a powerful tool for contemporary web development. These experiences have enriched my understanding of front-end development, igniting my passion to design user-centric and captivating digital solutions.`,
+    grade: "8.4 CGPA",
+    content: `With a strong foundation in Electronics and Communication Engineering (ECE), I have developed analytical thinking and problem-solving skills that are essential in the tech industry. My academic journey has provided me with a deep understanding of engineering principles, which I now integrate with my passion for IT. This blend of knowledge enables me to approach challenges with both technical precision and innovative solutions, making me a versatile professional ready to contribute effectively to the evolving digital landscape.`,
   },
   {
-    schoolname: "HTML Developer",
-    studyinfo: "Sprite Software",
+    schoolname: "M.K.V.K Matric Higher Secondary School",
+    studyinfo: "HSC- XII(std) (BIO-MATHS)",
+    year: "2018-2019",
+    grade: "60%",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores qui aut nobis repellat totam expedita adipisci, impedit ullam quae dolore hic deserunt velit quisquam! Laboriosam vel pariatur repudiandae non ullam quibusdam hic sunt consequatur, quam deserunt corrupti culpa explicabo. Placeat natus, amet dolorum doloribus asperiores quasi doloremque fugiat dignissimos accusantium?",
+      "I completed my Higher Secondary Education (HSC) in Bio-Maths, which gave me valuable insights into the real world and strengthened my ability to make hard, critical decisions. The challenges I faced during this period helped me develop a problem-solving mindset and adaptability, shaping me into a more resilient and analytical thinker.",
   },
   {
-    schoolname: "HTML Developer",
-    studyinfo: "Sprite Software",
+    schoolname: "M.K.V.K Matric Higher Secondary School",
+    studyinfo: "SSLC - Xth(std)",
+    year: "2016-2017",
+    grade: "84%",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores qui aut nobis repellat totam expedita adipisci, impedit ullam quae dolore hic deserunt velit quisquam! Laboriosam vel pariatur repudiandae non ullam quibusdam hic sunt consequatur, quam deserunt corrupti culpa explicabo. Placeat natus, amet dolorum doloribus asperiores quasi doloremque fugiat dignissimos accusantium?",
+      "This phase that laid the foundation for my decision-making-skills. It was during this time that I learned the importance of real-world competition, adaptability, and perseverance. This period helped me develop discipline, curiosity, and resilience, shaping me into someone who thrives in challenging environments and constantly seeks growth.",
   },
 ];
 
