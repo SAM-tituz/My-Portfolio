@@ -1,8 +1,21 @@
-# React + Vite
+# 🌐 Portfolio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](https://github.com/user-attachments/assets/52f16fd5-1718-43d9-98a8-4452e558e501)  
 
-Currently, two official plugins are available:
+🚀 I have built a personal portfolio website to showcase my skills, projects, and experience. It serves as a digital space where users can learn more about me and reach out easily.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features  
+<ul style="list-style: none;">
+  <li>✅ **Interactive UI** – Designed with modern and responsive UI/UX principles</li>
+  <li>✅ **Projects Showcase** – Highlights my best work with descriptions and tech stack</li>
+  <li>✅ **Contact Form Integration** – Uses Google Apps Script to send messages directly to Google Sheets</li>
+  <li>✅ **Fast & Optimized** – Built with React, Bootstrap, and CSS animations for smooth performance</li>   
+</ul>
+
+## 🛠 Tech Stack  
+- **Frontend:** React, HTML, CSS, JavaScript, Bootstrap  
+- **APIs & Tools:** Google Apps Script for form submission  
+
+---
+
+📌 **Live Demo:** 
