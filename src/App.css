@@ -1,24 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 html {
   width: 100%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 body {
   width: 100%;
-  overflow-x: hidden;
   font-weight: 400;
-  overflow-x: hidden;
   position: relative;
   background-color: #191924 !important;
   color: #fff !important;
 }
-
-

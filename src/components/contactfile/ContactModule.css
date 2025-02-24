@@ -1,8 +1,9 @@
 /* ContactForm.css */
 .contact-form-container {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  padding: 20px;
   justify-content: center;
   align-items: center;
 }

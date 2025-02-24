@@ -1,49 +1,67 @@
-/* Footer.css */
 footer {
-    background-color: #191924;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer h2 {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  footer nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  footer nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  footer nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  footer .social-icons {
-    margin: 20px 0;
-    display: flex;
-    justify-content:center;
-  }
-  
-  footer .social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1.5em;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 1em;
-  }
+  background-color: #191924;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-footer .social-icons .icon:hover {
+footer h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* Navigation Menu */
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Adds spacing between items */
+  flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+  justify-content: center;
+}
+
+footer nav ul li {
+  display: inline-block;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+  color: #C62368;
+}
+
+/* Social Icons */
+footer .social-icons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+}
+
+footer .social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #C62368;
+}
+
+footer p {
+  margin: 10px 0 0;
+  font-size: 1em;
+}
+
+footer .social-icons a:hover {
     color:#C62368; /* Replace with the background color */
     background-color:transparent; /* Change icon background color */
 }
@@ -51,6 +69,6 @@ footer .social-icons .icon:hover {
 .tooltip-inner {
     background: #5a5a5b;
   }
-.titlecard a:hover{
+.titlecard li a:hover{
     color: #C62368;
 }
