@@ -160,8 +160,8 @@
 
 /* Reveal full text on hover */
 .experience-card:hover p {
-  -webkit-line-clamp: unset; /* Remove line limit */
-  line-clamp: unset;
+  /* -webkit-line-clamp: unset; */
+  /* line-clamp: unset; */
   opacity: 1;
   transform: translateY(0);
 }

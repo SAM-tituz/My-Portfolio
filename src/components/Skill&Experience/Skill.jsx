@@ -39,7 +39,7 @@ const ExperienceCard = ({ title, company, content }) => {
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
       style={{
-        maxHeight: expanded ? "500px" : "180px", // Adjust height for expansion
+        maxHeight: expanded ? "750px" : "180px", // Adjust height for expansion
         transition: "max-height 0.5s ease-in-out",
       }}
     >

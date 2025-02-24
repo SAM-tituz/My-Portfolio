@@ -40,33 +40,25 @@
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(100, 100, 255, 0.2);
-  transition: all 0.4s ease-in-out;
+  transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.4s ease-in-out;
+  transform-origin: bottom;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  max-height: 200px; /* Initial height */
+  /* max-height: 250px; */
   white-space: normal;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-/* Initial text visibility - only show 4 lines and end with "..." */
-.education-card {
-  position: relative;
-  max-height: 250px; /* Adjust initial height */
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out,
-    box-shadow 0.4s ease-in-out;
-  transform-origin: bottom; /* Expands only at the bottom */
-}
 
-/* Style for text truncation */
 .education-card p {
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* Show only 2 lines */
-  -webkit-box-orient: vertical;
-  line-clamp: 2;
+  /* display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical; */
+  line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
   opacity: 0.8;
@@ -75,27 +67,27 @@
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-/* Expansion effect on hover */
+
 .education-card:hover {
-  max-height: 500px; /* Expand smoothly */
-  transform: scale(1.02); /* Subtle scale effect */
+  max-height: 500px; 
+  transform: scale(1.02); 
   box-shadow: 0 10px 25px rgba(100, 100, 255, 0.5);
   border: 2px solid rgba(100, 100, 255, 0.7);
 }
 
-/* Reveal full text smoothly */
+
 .education-card:hover p {
-  -webkit-line-clamp: unset; /* Remove truncation */
+  /* -webkit-line-clamp: unset; 
+  line-clamp: unset; */
   opacity: 1;
-  line-clamp: unset;
   transform: translateY(0);
 }
 
-/* Ensure animation is smooth when mouse leaves */
+
 .education-card:not(:hover) {
   transition: max-height 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
-/* Animated Border Outline */
+
 .education-card::before {
   content: "";
   position: absolute;

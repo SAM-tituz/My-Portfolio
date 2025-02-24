@@ -39,8 +39,8 @@ const EducationCard = ({ schoolname, studyinfo, grade, year, content }) => {
       onMouseLeave={() => setExpanded(false)}
       style={
         {
-          // maxHeight: expanded ? "500px" : "200px", // Adjust height for expansion
-          // transition: "max-height .5s ease-in-out",
+          maxHeight: expanded ? "700px" : "250px", // Adjust height for expansion
+          transition: "max-height .5s ease-in-out",
         }
       }
     >
