@@ -32,13 +32,12 @@
   cursor: pointer;
 }
 
-
 .form-control::placeholder {
   color: #fff;
 }
 .contact-form-container .btn-primary {
-    margin-top: 20px;
-    width: 100px;
+  margin-top: 20px;
+  width: 100px;
   background-color: #2f95bd;
   border-color: #2f95bd;
 }
@@ -48,7 +47,25 @@
   border-color: #aa367c;
 }
 .contactmessage {
-    height: 120px !important; /* Adjust height as needed */
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-  }
+  height: 120px !important; /* Adjust height as needed */
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+.status-message.success {
+  margin-top: 10px;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 50px;
+  color: rgb(3, 146, 3);
+  background-color: #fff;
+  width: max-content;
+}
+.status-message.error {
+  margin-top: 10px;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 50px;
+  color: rgb(226, 3, 3);
+  background-color: #fff;
+  width: max-content;
+}

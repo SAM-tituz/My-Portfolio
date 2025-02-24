@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import "./ContactModule.css";
 import contactimg from "../../assets/contact-img.svg";
 
 function Contact() {
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbx9ER5vVZkzPfqL0UF0_GV69f3KRljsPXAG4EoJWPLkL7TKl18NpBMYwEKWgp1Olcy0/exec"; // Replace with your actual script URL
-
+  const scriptURL = import.meta.env.VITE_GOOGLE_URL;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,6 +16,8 @@ function Contact() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusType, setStatusType] = useState(""); // 'success' or 'error'
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,18 +33,30 @@ function Contact() {
       });
 
       if (response.ok) {
-        alert("Message sent successfully!");
+        setStatusType("success");
+        setStatusMessage("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        alert("Error sending message.");
+        setStatusType("error");
+        setStatusMessage("Error sending message!");
       }
     } catch (error) {
       console.error("Error!", error.message);
-      alert("An error occurred.");
+      setStatusMessage("An error occurred.");
     }
 
     setButtonText("Send");
   };
+    // Clear status message after 3 seconds
+  useEffect(() => {
+    if (statusMessage) {
+      const timer = setTimeout(() => {
+        setStatusMessage("");
+      }, 3000);
+
+      return () => clearTimeout(timer); // Cleanup to prevent memory leaks
+    }
+  }, [statusMessage]);
 
   return (
     <section className="contact">
@@ -104,6 +116,11 @@ function Contact() {
                 <Button variant="primary" type="submit">
                   {buttonText}
                 </Button>
+                {statusMessage && (
+                  <p className={`status-message ${statusType}`}>
+                    {statusMessage}
+                  </p>
+                )}
               </Form>
             </Col>
           </Row>
