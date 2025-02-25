@@ -134,7 +134,7 @@ function Project() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Source code
+                  View code
                 </a>
               </div>
             </div>

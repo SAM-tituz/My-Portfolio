@@ -31,8 +31,8 @@
   .banner p {
     text-align: center !important;
     font-size: 19px !important;
-    margin: 10px;
-    margin-left: 13px;
+    /* margin: 10px; */
+    /* margin-left: 10px; */
   }
   .resume-btn {
     display: flex;
@@ -101,10 +101,8 @@
 }
 
 .bg {
-  background: url("../../assets/animation.svg") no-repeat center;
-  background-size: cover;
+  background: url("../../assets/animation.svg") no-repeat center center;
+  /* background-size: cover; */
   overflow: hidden;
-  height: 100%;
-  width: 100%;
-  background-size: 100% 100%;
+
 }

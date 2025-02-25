@@ -15,7 +15,7 @@ function Banner() {
             xl={{ span: 7, order: 2 }}
             className="d-flex justify-content-center "
           >
-            <div className="bg">
+            <div className="">
               <Image
                 src={HeaderImage}
                 alt="Header img"

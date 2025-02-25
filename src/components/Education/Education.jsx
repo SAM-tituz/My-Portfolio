@@ -39,7 +39,7 @@ const EducationCard = ({ schoolname, studyinfo, grade, year, content }) => {
       onMouseLeave={() => setExpanded(false)}
       style={
         {
-          maxHeight: expanded ? "700px" : "250px", // Adjust height for expansion
+          maxHeight: expanded ? "700px" : "248px", // Adjust height for expansion
           transition: "max-height .5s ease-in-out",
         }
       }
@@ -58,7 +58,7 @@ function Education() {
   return (
     <section className="education" id="education">
       <h1 className="mb-3">Education</h1>
-      <p className="mb-4 ">
+      <p className="mb-4 p-1">
         My education has been a journey of self-discovery and growth. My
         educational details are as follows.
       </p>

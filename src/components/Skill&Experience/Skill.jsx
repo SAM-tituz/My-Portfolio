@@ -57,7 +57,7 @@ function Skill() {
         <div className="spacer layer" />
         <section className="skills" id="skills">
           <h1>Skills</h1>
-          <p>Here are some of my skills on which I have learnt.</p>
+          <p className="p-3">Here are some of my skills on which I have learnt.</p>
           <div className="skill-container">
             {/* Frontend Skills */}
             <div className="skill-card">
@@ -127,7 +127,7 @@ function Skill() {
         </section>
         <section className="experience" id="experience">
           <h1>Experience</h1>
-          <p>
+          <p className="p-3">
             Launching My Career: A Fresh Perspective on Front-End Engineering
           </p>
           <div className="experience-container">
