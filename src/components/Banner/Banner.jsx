@@ -49,7 +49,7 @@ function Banner() {
             </p>
             <button
               className="btn btn-outline-primary resume-btn"
-              onClick={() => console.log("clicked")}
+              onClick={() => window.open("https://cv-sam.tiiny.site","_blank")}
             >
               Check Resume
               <ArrowRightCircle size={20} className="ms-1" />

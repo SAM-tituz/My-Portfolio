@@ -95,6 +95,7 @@
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  
 }
 .resume-btn:hover {
   background: linear-gradient(90.21deg, #c62368 -5.91%, #4a2fbd 111.58%);
