@@ -43,7 +43,7 @@ const ExperienceCard = ({ title, company, content }) => {
         transition: "max-height 0.5s ease-in-out",
       }}
     >
-      <h5 className="card-title ">{title}</h5>
+      <h5 className="card-title mb-2">{title}</h5>
       <h6 className="card-subtitle mb-2 text-start">{company}</h6>
       <p className="card-text text-start">{content}</p>
     </div>

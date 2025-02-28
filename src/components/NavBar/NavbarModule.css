@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 nav.navbar.scrolled {
   padding: 3px 0;
 
@@ -8,13 +9,16 @@ nav.navbar a.navbar-brand {
 }
 .navbar-brand {
   color: white !important;
-  font-size: 20px;
+  font-size: 30px;
+  padding-top: 12px;
   font-weight: bold;
+  font-family: "La Belle Aurore", cursive;
 }
 .navbar-nav .nav-link {
   color: white !important;
   font-size: 17px;
 }
+
 .navbar-collapse {
   padding: 10px;
   border-radius: 5px;
