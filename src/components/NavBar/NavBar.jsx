@@ -26,7 +26,7 @@ function NavBar() {
   return (
     <Navbar expand="md" fixed="top" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">Code With Me</Navbar.Brand>
+        <Navbar.Brand href="#contact">Code With Me</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto ">

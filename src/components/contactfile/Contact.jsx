@@ -59,7 +59,7 @@ function Contact() {
   }, [statusMessage]);
 
   return (
-    <section className="contact">
+    <section id="contact"className="contact">
       <div className="contact-form-container">
         <Container>
           <Row>
